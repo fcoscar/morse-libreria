@@ -12,7 +12,7 @@ def isValid(string):
 
 
 def turnToMorse(string):
-    if isValid():
+    if isValid(string):
         string_morse = ''
         for i in range(len(string)):
             string_morse += morse_code[string[i].upper()] + ';'
@@ -20,7 +20,7 @@ def turnToMorse(string):
     else:
         return "Invalid Input"
 def turnToString(string):
-    if isValid():
+    if isValid(string):
         string_normal = ""
         code = string.split(";")
         for i in range(len(code)):
