@@ -6,7 +6,7 @@ morse_code = {'A':'.-', 'B':'-...','C':'-.-.','D':'-..','E':'.',
 def turnToMorse(string):
     string_morse = ''
     for i in range(len(string)):
-        string_morse += (morse_code[string[i].upper()])
+        string_morse += morse_code[string[i].upper()] + ';'
     return string_morse
 
 def turnToString(string):
